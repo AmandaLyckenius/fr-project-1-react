@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { generateNameByGender } from "~/utils/NameUtils";
-
+import { CustomButton } from "~/CustomButton/customButton";
 
 export function NameGenerator(){
 
@@ -16,12 +16,13 @@ export function NameGenerator(){
     
     return (
         <div>
-            <p>Navigated succesfully to Name Generator Page</p>
+            <p>Pet name generator</p>
 
-        
-            <button onClick={() => setRandomName("female")} >Generate female name</button>
-            <button onClick={() => setRandomName("male")}>Generate male name</button>
-            <button onClick={() => setRandomName("neutral")}>Generate neutral name</button>
+
+
+            <CustomButton onClick={() => setRandomName("female")} buttonMessage="Generate female name"></CustomButton>
+            <CustomButton onClick={() => setRandomName("male")} buttonMessage="Generate male name"></CustomButton>
+            <CustomButton onClick={() => setRandomName("neutral")} buttonMessage="Generate neutral name"></CustomButton>
 
             <p>{randomPetName}</p>
 

@@ -7,7 +7,7 @@ export function NameList(){
 
     return (
     <div>
-        <p>Navigated succesfully to Name List Page</p>
+        <p>List of pet names</p>
 
         <ul>
             {allNames.map(namn => (

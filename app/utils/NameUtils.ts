@@ -1,6 +1,6 @@
-const femaleNames = ["Berit", "Bodil", "Selma", "Sally"]
-const maleNames = ["Rocky", "Bob", "Kurt", "Olle"]
-const neutralNames = ["Fluffy", "Pyret", "Saffran", "Pepsi"]
+const femaleNames = ["Berit", "Bodil", "Selma", "Sally", "Doris", "Poppy"]
+const maleNames = ["Rocky", "Bob", "Kurt", "Olle", "Frasse", "Samson", "Lasse", "Mumin"]
+const neutralNames = ["Fluffy", "Pyret", "Saffran", "Pepsi", "Zingo"]
 
 const lists = {
     female: femaleNames,
@@ -8,7 +8,7 @@ const lists = {
     neutral: neutralNames
 }
 
-export function getAllNames() {
+export function getAllNames(): string[] {
     const allNames = [...femaleNames, ...maleNames, ...neutralNames] 
    return allNames
 }
