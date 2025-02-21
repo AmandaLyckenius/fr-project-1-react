@@ -1,10 +1,10 @@
 import type { Route } from "./+types/home";
-import { NameList } from "../nameList/nameList";
+import { NameList } from "../Components/nameList/nameList";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Previous generated names" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "List of pet names" },
+    { name: "description", content: "List of pet names" },
   ];
 }
 

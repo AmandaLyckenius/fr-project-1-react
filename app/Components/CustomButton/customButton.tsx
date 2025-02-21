@@ -1,3 +1,5 @@
+import styles from "./customButton.module.css"
+
 export interface CustomButton {
     buttonMessage: string,
     onClick: () => void
@@ -6,7 +8,7 @@ export interface CustomButton {
 export function CustomButton ({buttonMessage, onClick}: CustomButton){
 
     return (
-        <button onClick={onClick}>{buttonMessage}</button>
+        <button onClick={onClick} className={styles.btn}>{buttonMessage}</button>
     )
 
 }

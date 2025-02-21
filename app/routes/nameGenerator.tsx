@@ -1,10 +1,10 @@
 import type { Route } from "./+types/home";
-import {NameGenerator} from "../nameGenerator/nameGenerator"
+import {NameGenerator} from "../Components/nameGenerator/nameGenerator"
 
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Name generator" },
-    { name: "description", content: "Welcome to React Router!" },
+    { name: "description", content: "Generate a pet name" },
   ];
 }
 
